@@ -1,0 +1,10 @@
+src/assets/*
+!src/assets/scss
+coverage
+dist
+build
+node_modules
+public
+*.json
+*.d.ts
+*.yml

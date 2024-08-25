@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+README.md
+.git
+coverage
+package-lock.json
+.dockerignore
+.gitignore
+dist
+build

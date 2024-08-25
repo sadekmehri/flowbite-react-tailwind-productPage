@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: ../../
+      dockerfile: docker/development/Dockerfile
+    restart: on-failure
+    image: frontend-development
+    command: npm run dev
+    volumes:
+      - ./../../:/app
+      - /app/node_modules
+    ports:
+      - '3000:3000'
+    networks:
+      - full-project
+
+networks:
+  full-project:
+    driver: bridge
